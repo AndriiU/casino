@@ -1,9 +1,9 @@
 /*!
 Theme Name: casino
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Andrii Udod
+Author URI: https://www.linkedin.com/in/andrii-udod-81b9378a/
+Description: Custom theme Casino is based on Underscores
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -648,7 +648,7 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
+	display: none; /*ANU*/
 	width: 100%;
 }
 
@@ -966,4 +966,169 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+/* hooks
+--------------------------------------------- */
+
+.site-branding {
+	max-width: 436px;
+    text-align: center;
+    margin: 0 auto;
+}
+.site-header{
+	background: url(http://underscores.all-news.space/wp-content/uploads/2021/07/header.jpg);
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size:cover;
+    min-height: 270px;
+    padding: 30px;
+}
+.site-main{
+	width: 100%;
+}
+.entry-header{
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+.entry-content{
+	width: 80%;
+	margin: 0 auto;
+	background-color: none;
+}
+.site-info{
+	width: 80%;
+	margin: 0 auto;
+}
+.site-main{
+	margin-top: -23px;
+}
+.page-header-acf{
+	width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 0 18px 0;
+}
+.item_page_top{
+
+}
+@media (min-width: 1000px) and (max-width: 1920px) {
+    .acf-field{
+		width: 30%;
+		margin-top: 30px;
+		position: relative;
+		float: left;
+    	margin-right: 3%;
+	}
+}
+@media (min-width: 200px) and (max-width: 999px) {
+    .acf-field{
+		width: 100%;
+		margin-top: 30px;
+		position: relative;
+	}
+}
+
+.acf-field-title{
+	width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+    border-radius: 0 0 30px 30px;
+    padding: 5px;
+    position: relative;
+}
+.acf-field-img{
+	margin-top: -34px;
+} 
+.acf-field-title span{
+	color: white;
+}
+.acf-rating{
+	text-align: center;
+}
+.acf-field-content{
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+}
+.acf-upto{
+	text-align: center;
+}
+.acf-coust{
+	color: red;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+.acf-benefits{
+	margin-bottom: 20px;
+}
+.acf-benefits ul{
+	list-style-type: none; 
+	margin: 0;
+	float: left;
+	padding-inline-start: 10px;
+}
+.acf-benefits li{
+	font-size: 12px;
+}
+.acf-benefits ul:first-child  li:before {
+	color: green;
+	content:"\2713\0020";
+}
+.acf-benefits img{
+	width: 40px;
+}
+.acf-benefits-left{
+	float: left;
+	width: 80%;
+}
+.acf-benefits-right{
+	width: 20%;
+	float: right;
+}
+.acf-buttom{
+	width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acf-buttom a{
+	text-decoration: none;
+    color: white;
+    width: 50%;
+    padding: 10px 40px;
+    background-color: #00d121;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.acf-clear{
+	clear: both;
+    height: 20px;
+}
+.rating-result {
+	width: 265px;
+	margin: 0 auto;
+	text-align: center;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.site-footer{
+	background: linear-gradient(179.98deg, #2F7E70 -0.71%, #011C17 99.98%);
+	width: 100%
 }
